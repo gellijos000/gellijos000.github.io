@@ -1,0 +1,153 @@
+/*default styling: mobile*/
+body{
+  background-color: #181919;
+  color: #5C5C53;
+  font-family: "Montserrat", "san-serif";
+  text-align: center;
+}
+
+#container{
+  margin: auto;
+  width: 100%;
+}
+
+#tagline{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #3760E8;
+}
+a:hover{
+  color: #5C5C53;
+}
+
+h3{
+  text-align: center;
+  font-family: "Merriweather", "serif";
+}
+
+h5{
+  text-align: left;
+}
+#headerImg {
+  position: relative;
+  width: 90%;
+  top: 50px;
+  margin-bottom: 10%;
+}
+
+.port_img{
+  width: 50%;
+  max-width: 450px;
+  border: 5px solid black;
+  }
+
+.example, .multimedia, .beer{
+}
+
+#banner{
+  position: fixed;
+  top: -5px;
+  width: inherit;
+  background-color: #FEFFFC;
+  padding-bottom: -10px;
+  z-index: 1;
+}
+
+.title{
+  border-bottom: 2px;
+  border-color: #242120;
+}
+ul{
+  text-align: center;
+  list-style-type: none;
+}
+
+footer{
+  position: relative;
+  top: 20px;
+  clear: both;
+  font-size: .85em;
+}
+
+input[type=button]{
+  background-color: #D5D6D4;
+  color: #004687;
+  font-family: "Montserrat", "san-serif";
+  background-color: yellow;
+  border-radius: 20px;
+}
+input[type=button]:hover{
+  color: black;
+}
+
+#top{
+  cursor: pointer;
+}
+.icon{
+  width: 2vw;
+  min-width: 20px;
+}
+@media only screen and (min-width: 693px){
+  body{
+    font-size: 1.15em;
+  }
+  #container{
+    width: 90%;
+    /*border: 2px solid black;*/
+  }
+  .example{
+    display: inline-block;
+    width: 40%;
+    margin-top: 5px;
+  }
+  #top{
+    font-size: 90%;
+    position: fixed;
+    bottom: 10vh;
+    right: 0vh;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1023px){
+  #container{
+    width: 85%;
+  }
+  body{
+    font-size: 1.35em;
+  }
+  #opener{
+    position: relative;
+    top: -40px;
+  }
+  #documets{
+    position: relative;
+    top: -50px;
+  }
+  .beer-img{
+    max-width: 150px;
+  }
+  .example, .multimedia, .beer{
+    display: inline-block;
+    width: 30%;
+    margin-top: 5px;
+  }
+  .mobile-br{
+    display: none;
+  }
+  #top{
+    position: fixed;
+    bottom: 10vh;
+    right: 10vh;
+    cursor: pointer;
+  }
+  input[type="button"]{
+    font-size: 1.25em;
+  }
+  footer{
+    margin-top: 5%;
+  }
+}
