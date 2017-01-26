@@ -85,6 +85,7 @@ input[type=button]:hover{
 
 #top{
   cursor: pointer;
+  z-index: 3;
 }
 .icon{
   width: 2vw;
@@ -115,6 +116,7 @@ input[type=button]:hover{
 @media only screen and (min-width: 1023px){
   #container{
     width: 85%;
+    /*border: 2px solid red;*/
   }
   body{
     font-size: 1.35em;
@@ -149,5 +151,19 @@ input[type=button]:hover{
   }
   footer{
     margin-top: 5%;
+  }
+  .ratings{
+    float: left;
+    width: 33%;
+  }
+  #ratings{
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+  }
+  #sudo-portfolio{
+    margin-bottom: 15vh;
+  }
+  #resume-file{
+    width: 15%;
   }
 }
