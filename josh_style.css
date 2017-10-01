@@ -47,3 +47,26 @@ html {
 .hidden {
   display: none;
 }
+
+.content .span_3 {
+  width: 75%;
+}
+
+.experience , .other {
+  display: none;
+}
+
+.block_1{
+  width: 30%;
+  float: left;
+  margin-right: 3%;
+}
+.block_2{
+  width: 64%;
+  float: left;
+  margin-right: 3%;
+}
+
+.clear {
+  clear: both;
+}
