@@ -1,169 +1,49 @@
-/*default styling: mobile*/
-body{
-  background-color: #181919;
-  color: #5C5C53;
-  font-family: "Montserrat", "san-serif";
-  text-align: center;
+/*
+  color scheme: white and gray and if I change it later I will
+*/
+
+html {
+  height: 100%;
+  width: 80vw;
+  background-color: #FFF;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-family: "Merriweather";
 }
 
-#container{
-  margin: auto;
-  width: 100%;
-}
-
-#tagline{
-  width: 100%;
-}
-
-a{
-  text-decoration: none;
-  color: #3760E8;
-}
-a:hover{
-  color: #5C5C53;
-}
-
-h3{
-  text-align: center;
-  font-family: "Merriweather", "serif";
-}
-
-h5{
-  text-align: left;
-}
 #headerImg {
-  position: relative;
-  width: 90%;
-  top: 50px;
-  margin-bottom: 10%;
+  background-image: url('img/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
 }
 
-.port_img{
-  width: 50%;
-  max-width: 450px;
-  border: 5px solid black;
-  }
-
-.example, .multimedia, .beer{
+#headerNav {
 }
 
-#banner{
-  position: fixed;
-  top: -5px;
-  width: inherit;
-  background-color: #FEFFFC;
-  padding-bottom: -10px;
-  z-index: 1;
-}
-
-.title{
-  border-bottom: 2px;
-  border-color: #242120;
-}
-ul{
-  text-align: center;
+.navigation {
+  border: 1px solid gray;
+  display: inline-block;
   list-style-type: none;
+  width: 30%;
+  text-align: center;
+  color: gray;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: auto;
 }
 
-footer{
-  position: relative;
-  top: 20px;
-  clear: both;
-  font-size: .85em;
+.navigation:hover {
+  border: 1px solid blue;
 }
 
-input[type=button]{
-  background-color: #D5D6D4;
-  color: #004687;
-  font-family: "Montserrat", "san-serif";
-  background-color: yellow;
-  border-radius: 20px;
-}
-input[type=button]:hover{
-  color: black;
+.active {
+  background-color: gray;
+  color: white;
 }
 
-#top{
-  cursor: pointer;
-  z-index: 3;
-}
-.icon{
-  width: 2vw;
-  min-width: 20px;
-}
-@media only screen and (min-width: 693px){
-  body{
-    font-size: 1.15em;
-  }
-  #container{
-    width: 90%;
-    /*border: 2px solid black;*/
-  }
-  .example{
-    display: inline-block;
-    width: 40%;
-    margin-top: 5px;
-  }
-  #top{
-    font-size: 90%;
-    position: fixed;
-    bottom: 10vh;
-    right: 0vh;
-    cursor: pointer;
-  }
-}
-
-@media only screen and (min-width: 1023px){
-  #container{
-    width: 85%;
-    /*border: 2px solid red;*/
-  }
-  body{
-    font-size: 1.35em;
-  }
-  #opener{
-    position: relative;
-    top: -40px;
-  }
-  #documets{
-    position: relative;
-    top: -50px;
-  }
-  .beer-img{
-    max-width: 150px;
-  }
-  .example, .multimedia, .beer{
-    display: inline-block;
-    width: 30%;
-    margin-top: 5px;
-  }
-  .mobile-br{
-    display: none;
-  }
-  #top{
-    position: fixed;
-    bottom: 10vh;
-    right: 10vh;
-    cursor: pointer;
-  }
-  input[type="button"]{
-    font-size: 1.25em;
-  }
-  footer{
-    margin-top: 5%;
-  }
-  .ratings{
-    float: left;
-    width: 33%;
-  }
-  #ratings{
-    margin-top: 15vh;
-    margin-bottom: 15vh;
-  }
-  #sudo-portfolio{
-    margin-bottom: 15vh;
-  }
-  #resume-file{
-    width: 15%;
-  }
+.hidden {
+  display: none;
 }
