@@ -2,7 +2,7 @@
   color scheme: white and gray and if I change it later I will
 */
 
-html {
+.wrapper {
   height: 100%;
   width: 80vw;
   background-color: #FFF;
@@ -25,19 +25,14 @@ html {
 }
 
 a {
-  text-decoration: none;
-  color: blue;
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
 }
 
 a:clicked {
-  text-decoration: none;
-  color: blue;
-}
-
-.docImg:hover {
-  position: relative;
-  z-index: 5;
-  width: 100%;
+  text-decoration: underline;
+  color: black;
 }
 
 .navigation {
@@ -91,4 +86,17 @@ a:clicked {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+figure {
+  cursor: pointer;
+}
+.imgDescription{
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: .9;
+  z-index: 3;
+  position: fixed;
 }
