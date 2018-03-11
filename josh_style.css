@@ -2,101 +2,51 @@
   color scheme: white and gray and if I change it later I will
 */
 
-.wrapper {
-  height: 100%;
-  width: 80vw;
-  background-color: #FFF;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  font-family: "Merriweather";
+body {
+  font-family: Merriweather;
 }
 
-#headerImg {
-  background-image: url('img/background.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 25vh;
+.wrapper{
+  width: 100%;
+  margin: auto;
 }
-
-.docImg {
-  border-radius: 100%;
-  width: 90%;
-}
-
-a {
-  text-decoration: underline;
-  color: black;
-  font-weight: bold;
-}
-
-a:clicked {
-  text-decoration: underline;
-  color: black;
-}
-
 .navigation {
-  border: 1px solid gray;
-  display: inline-block;
-  list-style-type: none;
-  width: 30%;
-  text-align: center;
-  color: gray;
-  background-color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: auto;
-}
-
-.navigation:hover {
-  border: 1px solid blue;
-}
-
-.active {
+  height: 5%;
+  z-index: 4;
+  position: fixed;
   background-color: gray;
+  text-align: justify;
+  display: none;
+}
+.navigation:after {
+  content: '';
+  width: 85%;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  display: inline-block;
+}
+.navigation span {
+  display: inline-block;
+}
+button{
+  background-color: blue;
   color: white;
 }
-
-.hidden {
-  display: none;
+#background {
+  background-image: url('img/cover.jpg');
+}
+.parallaxImg {
+  /*use full height*/
+    height: 500px;
+    width: 100%;
+  /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.content .span_3 {
-  width: 75%;
-}
-
-.experience , .other {
-  display: none;
-}
-
-.block_1{
-  width: 30%;
-  float: left;
-  text-align: center;
-  margin-right: 3%;
-}
-.block_2{
-  width: 64%;
-  float: left;
-  margin-right: 3%;
-}
-
-.clear {
-  clear: both;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-figure {
-  cursor: pointer;
-}
-.imgDescription{
-  display: none;
-  height: 100%;
-  width: 100%;
-  background-color: #000000;
-  opacity: .9;
-  z-index: 3;
-  position: fixed;
+.textDiv {
+  margin-left: 5%;
+  height: 250px;
 }
