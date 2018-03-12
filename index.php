@@ -46,8 +46,9 @@
               </figcaption>
             </figure>
           </div>
-          <div id="footer">
-          </div>
+      </div>
+      <div id="footer">
+        <span>propety of josh Gellinger</span><?php echo(date()); ?>
       </div>
     </body>
 </html>
