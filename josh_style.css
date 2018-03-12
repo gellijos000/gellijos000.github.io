@@ -8,30 +8,30 @@ body {
 
 .wrapper{
   width: 100%;
-  margin: auto;
 }
 .navigation {
   height: 5%;
   z-index: 4;
   position: fixed;
-  background-color: gray;
+  top: 0;
+  background-color: white;
   text-align: justify;
-  display: none;
+  width: inherit;
+
+/*  display: none;*/
 }
-.navigation:after {
-  content: '';
-  width: 85%;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
+
+.navSpan {
   display: inline-block;
+  margin-left: 35px;
+  padding: 10px 0 0 0;
+  border-bottom: 5px solid red;
 }
-.navigation span {
-  display: inline-block;
+
+.navSpan:hover {
+  color: blue;
 }
-button{
-  background-color: blue;
-  color: white;
-}
+
 #background {
   background-image: url('img/cover.jpg');
 }
@@ -47,6 +47,25 @@ button{
 }
 
 .textDiv {
-  margin-left: 5%;
-  height: 250px;
+  margin-left: 35px;
+  height: 100px;
+}
+
+.imgRight{
+  float: left;
+  display: inline-block;
+}
+
+.captionLeft{
+  float:left;
+  position: relative;
+  top: 50%;
+}
+#footer{
+  position:fixed;
+  bottom: 0;
+  height: 25px;
+  text-align: center;
+  background-color: yellow;
+  width: 100%;
 }
